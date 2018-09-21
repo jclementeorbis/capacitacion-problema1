@@ -2,8 +2,9 @@
 
 Capacitación: Git, bash y docker
 Integrantes:
-- [Jose Clemente]
-- [Carlos Gomez]
+- Jose Clemente
+- Carlos Gomez
+- Scrum Master: Carlos Gomez
 
 
 # PREGUNTAS:
