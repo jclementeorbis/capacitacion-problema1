@@ -121,3 +121,10 @@ Para ejecutar una shell
 
 - docker ps: lista los contenedores
 - docker ps -a: muestra que contenedores estan funcionando
+
+
+## 8. Agregar el comando para ejecutar el contenedor
+
+```sh
+docker run -it jclementex/orbis-training-docker:0.4.0 bash
+```
