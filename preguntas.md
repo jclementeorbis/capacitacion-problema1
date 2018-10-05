@@ -66,3 +66,58 @@ Git rebase básicamente lo que hace es recopilar uno a uno los cambios confirmad
 - git rebase: básicamente lo que hace es recopilar uno a uno los cambios confirmados en una rama, y reaplicarlos sobre otra.
 - git merge: Hace un merge entre dos branches, en este caso la dirección del merge sería entre el branch que indiquemos en el comando, y el branch donde estémos ubicados.
 - git branch: Nos muestra una lista de los branches que existen en nuestro repositorio. 
+
+
+
+# Parte 4
+
+# Responder estas preguntas :
+
+## 1. ¿Qué importancia tiene los tags en un proyecto?
+Porque se usa para indicar las versiones o releases de un proyecto.
+
+## 2. ¿Cuál es la diferencia entre un tag normal y un tag anotado en git?
+La diferencia entre los comandos es que uno le proporciona un mensaje de etiqueta mientras que el otro no
+
+## 3. ¿Cómo se sube todos los tags de git que hay en mi local?
+Se usa la opción --tags en el comando git push. Esto transfiere todas las etiquetas que no estén ya en el servidor remoto.
+
+## 4. ¿Es necesario loguearse cada vez que subo una imagen a dockerhub?
+Es necesario estar logueado para subir una imagen
+
+## 5. ¿Qué es y para qué sirve docker?
+Docker es una tecnologia para crear contenedores ligeros y portables para las aplicaciones software que puedan ejecutarse en cualquier máquina con Docker instalado.
+
+## 6. ¿Cuál es la diferencia entre docker y VirtualBox (virtualización)?
+La principal diferencia la encontraremos en sus componentes y la forma en la que se integran en la máquina Host donde corren.
+
+## 7. ¿Es necesario depender de una imagen de docker base al crear una imagen nueva?
+Si, para indicar en el Dockerfile la directiva FROM que indica la imagen base de la cual partiremos
+
+## 8. ¿Porqué debo anteponer el nombre de usuario en una imagen docker nueva?
+Si tratamos de subir la imagen así, nos dará un error que nos indica que es imposible subir la imagen al repositorio raíz y los repositorios raíz son administrados sólo por el equipo de Docker
+
+## 9. ¿Que pasa si creo una imagen sin especificar una versión o tag, con qué versión se crea?
+Se crea con <none>
+
+
+
+
+# Parte 5
+
+
+## 1. Listar las carpetas que hay dentro de la imagen
+
+### ¿Porqué es necesario crear un contenedor con esta bandera -it ? ¿Qué pasa si no le pongo -it?
+Para arrancar el contenedor en modo interactivo (-i) y asociar un tty (-t) y así poder ver la consola y escribir comandos.
+
+### ¿Para qué sirve ejecutar el comando bash al ejecutar una imagen?
+Para ejecutar una shell
+
+
+## 2. Revisar que el contenedor creado no esté en la lista de contenedores
+
+### ¿Cuál es la diferencia entre docker ps y docker ps -a?
+
+- docker ps: lista los contenedores
+- docker ps -a: muestra que contenedores estan funcionando
