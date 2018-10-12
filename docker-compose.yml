@@ -1,0 +1,7 @@
+version: '2'
+services:
+  nginx:
+    container_name: nginx_app
+    image: jclementex/orbis-training-docker:1.0.0
+    ports:
+      - "1080:80"

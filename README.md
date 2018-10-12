@@ -18,3 +18,16 @@ docker push jclementex/orbis-training-docker:0.1.0
 docker tag jclementex/orbis-training-docker:0.1.0 jclementex/orbis-training-docker:0.2.0
 ```
 
+# Parte 6
+
+## 2. Crear un contenedor exponiendo el puerto 80 a través del puerto 1080 al hacer docker run
+
+```sh
+docker run -d -p "1080:80" jclementex/orbis-training-docker:1.0.0
+```
+
+## 5. Agregar docker-compose para la construcción y ejecución de la imagen
+
+```sh
+docker-compose -f ./docker-compose.yml up
+```

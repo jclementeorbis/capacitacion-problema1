@@ -1,5 +1,3 @@
-FROM jclementex/orbis-training-docker:0.2.0
-RUN mkdir /app
-WORKDIR /app
-COPY ./preguntas.md preguntas.md
-RUN ls -la && cat preguntas.md
+FROM nginx:alpine
+LABEL maintainer="jose.clemente@orbis.com.pe"
+EXPOSE 80
