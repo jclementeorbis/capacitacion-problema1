@@ -31,3 +31,12 @@ docker run -d -p "1080:80" jclementex/orbis-training-docker:1.0.0
 ```sh
 docker-compose -f ./docker-compose.yml up
 ```
+
+
+# Parte 7
+
+## 5. Usando docker run ejecutar npm install
+
+```sh
+docker run -w /app -v "D:\Projects\orbis-training-project":/app jclementex/orbis-training-docker:2.0.0 npm install
+```
