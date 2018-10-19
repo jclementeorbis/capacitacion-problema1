@@ -40,3 +40,9 @@ docker-compose -f ./docker-compose.yml up
 ```sh
 docker run -w /app -v "D:\Projects\orbis-training-project":/app jclementex/orbis-training-docker:2.0.0 npm install
 ```
+
+## 7. Exponer los puertos 3030 y 35729 en la imagen de docker, luego ejecutar npm start usando docker run
+
+```sh
+docker run -w /app -p 3030:3030 -p 35729:35729 -v "D:\Projects\orbis-training-project":/app jclementex/orbis-training-docker:2.1.0 npm start
+```
